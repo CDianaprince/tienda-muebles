@@ -7,19 +7,27 @@
 
 body{
     background-color: antiquewhite;
+  
+}
+main{
+    margin: 2%;
+
 }
 
 header{
     background-color: burlywood;
     height: 90px;
+    
 }
 
 header h1{
     text-align: center;
+    padding: 1%;
 }
 
 nav{
-padding-top: 1.5%;
+padding-top: 0.1%;
+background-color:rgb(195, 76, 76);
 }
 
 nav a{
@@ -36,6 +44,7 @@ nav a{
     display: flex;
     justify-content: space-between;
     padding: 3%;
+    
 }
 
 .comedor, .escritorio, .terraza p{
@@ -43,7 +52,7 @@ nav a{
 }
 
 .titulos{
-    padding: 1%;
+   
     background-color: rgb(235, 183, 166);
     border-bottom: solid;
     border-color: saddlebrown;
