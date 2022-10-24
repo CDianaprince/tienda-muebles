@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: burlywood;
+    height: 90px;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+padding-top: 1.5%;
+}
+
+nav a{
+    padding-right: 2%;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+.comedor, .escritorio, .terraza{
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.comedor, .escritorio, .terraza p{
+    font-weight: 700;
+}
+
+.titulos{
+    padding: 1%;
+    background-color: rgb(235, 183, 166);
+    border-bottom: solid;
+    border-color: saddlebrown;
+   
+}
+
+.img-c{
+    
+    border-style: solid;
+    border-radius: 50%;
+    border-color:darkgray;
+    width: 70%;
+    height: 70%;
+}
+
+footer{
+    background-color: burlywood;
+    
+}
+footer h2{
+    text-align: center;
+    padding: 1%;
+}
