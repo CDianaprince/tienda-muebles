@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 
 }
 
@@ -9,20 +10,25 @@ body{
     background-color: antiquewhite;
   
 }
+
 main{
-    margin: 2%;
+    margin: 5%;
 
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
     background-color: burlywood;
     height: 90px;
+    padding: 1%;
     
 }
 
-header h1{
-    text-align: center;
-    padding: 1%;
+
+#icon1{
+    width: 2%;
+    height: 2%;
 }
 
 nav{
@@ -41,32 +47,79 @@ nav a{
 }
 
 .comedor, .escritorio, .terraza{
-    display: flex;
-    justify-content: space-between;
-    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 1%;
     
+    /*justify-content: space-between;
+    padding: 3%;
+    background-color: rgba(245, 187, 168, 0.415);
+    */
 }
 
-.comedor, .escritorio, .terraza p{
+.items{
+    border-radius: 10px;
+   
+}
+
+.items:hover{
+    box-shadow: 0 10px 20px rgb(0,0,0,0.20);
+}
+
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-weight: 700;
 }
+
+.info-producto p{
+    font-size: 18px;
+    font-weight:900;
+}
+
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: rgb(197, 80, 80);
+    color: white;
+    padding: 15px 10 px;
+    cursor: pointer;
+}
+
 
 .titulos{
    
     background-color: rgb(235, 183, 166);
     border-bottom: solid;
     border-color: saddlebrown;
+    padding: 0.5%;
    
 }
 
 .img-c{
     
-    border-style: solid;
-    border-radius: 50%;
-    border-color:darkgray;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    
 }
+
+.img:hover{
+    transform: scale(1.2);
+}
+
+figure{
+    overflow: hidden;
+    text-align: center;
+}
+
 
 footer{
     background-color: burlywood;
