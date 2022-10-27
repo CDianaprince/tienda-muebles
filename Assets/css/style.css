@@ -49,8 +49,8 @@ nav a{
 .comedor, .escritorio, .terraza{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 1%;
+    gap: 60px;
+    padding: 5%;
     
     /*justify-content: space-between;
     padding: 3%;
@@ -58,39 +58,116 @@ nav a{
     */
 }
 
-.items{
-    border-radius: 10px;
-   
+
+.union-card-detalle{
+ width: 100%;
+ position: relative;
+ background-color: antiquewhite;
+ transform: all 300ms;
+
+
 }
 
-.items:hover{
+.union-card-detalle:hover{
     box-shadow: 0 10px 20px rgb(0,0,0,0.20);
+    
 }
 
-.info-producto{
-    padding: 15px 30px;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-weight: 700;
+.union-card-detalle:hover .info-descripcion{
+    margin-top: 0;
+    transition: 1s;
 }
 
-.info-producto p{
-    font-size: 18px;
-    font-weight:900;
+.img-a{
+    position: relative;
+    background-color: rgb(241, 216, 184);
+    z-index: 1;
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+     
 }
 
+.info-descripcion{
+    width: 100%;
+    background-color: rgb(239, 208, 183);
+    padding: 4%;
+    margin-top: -340px;
+    line-height: 120%;
+    text-align: center;
 
-.info-producto button{
+
+}
+
+.info-descripcion button{
     border: none;
     background: none;
     background-color: rgb(197, 80, 80);
     color: white;
-    padding: 15px 10 px;
+    padding: 3%;
     cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
 }
 
+.info-descripcion p {
+   
+    font-size: 80%;
+    
+    /*
+    display:-webkit-box;
+    display: -moz-box;
+    -webkit-box-orient:vertical ;
+    -moz-box-orient: vertical;
+    box-orient:vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);*/
+}
+
+/*.union-card-detalle{
+  position: relative; 
+  z-index: 100;
+   
+   
+}
+
+.union-card-detalle:hover .detalle{
+    clear: both;
+    left: 100%;
+
+    }
+
+
+.detalle{
+    position:absolute;
+    width: 80%;
+    height: 90%;
+    line-height: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(224, 186, 186);
+    margin: auto;
+    color: white;
+    border-radius: 10%;
+    padding: 1%;
+    text-align: center;
+    transition: 0.9s;
+    z-index: 90;
+    
+   
+   
+    
+    
+}
+
+
+.detalle h4, h3{
+    color: brown;}
+*/
 
 .titulos{
    
@@ -106,20 +183,10 @@ nav a{
     width: 80%;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px ;
     transition: all .5s;
     
 }
-
-.img:hover{
-    transform: scale(1.2);
-}
-
-figure{
-    overflow: hidden;
-    text-align: center;
-}
-
 
 footer{
     background-color: burlywood;
